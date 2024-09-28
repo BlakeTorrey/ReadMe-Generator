@@ -1,0 +1,15 @@
+{
+  "name": "readme",
+  "version": "1.0.0",
+  "description": "Generate a readme",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Blake Torrey",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
