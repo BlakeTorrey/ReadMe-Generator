@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import {writeFile} from 'fs/promises';
+import generateMarkdown from "./utils/generateMarkdown";
+
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
@@ -38,7 +40,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Which liscence would you like to use for your project?',
-            choices: ['MIT', 'apache commons', 'BSD liscense', 'unlicense', 'None of the Above'],
+            choices: ['MIT', 'apache', 'GNU', 'unlicense', 'None of the Above'],
         },
         {
             type: 'input',
