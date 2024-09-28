@@ -14,9 +14,9 @@ github.com/BlakeTorrey/ReadMe-Generator
 
 and download the zipped file as seen below.
 
-```md
+
 ![Screenshot](./Develop/assets/images/screenshotzip.png)
-```
+
 
 Once it has been downloaded unzip the file and pull up a console. Navigate to the directory like this:
 
