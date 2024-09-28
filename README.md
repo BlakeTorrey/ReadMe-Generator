@@ -49,7 +49,7 @@ This will begin to run the program and a series of questions will begin to pop u
 Once all of the questions have been answered, A README will appear in the generated folder with your newly created README.
 
 
-![video](./Develop/assets/Videos/Untitled%20Video%20September%2028,%202024%205_35%20PM.webm)
+![video](./Develop/assets/Videos/GeneratedREADME%20sample.gif)
 
 
 ## License
