@@ -1,14 +1,14 @@
 // TODO: Include packages needed for this application
 import inquirer from "inquirer";
 import {writeFile} from 'fs/promises';
-import generateMarkdown from "./utils/generateMarkdown";
+import generateMarkdown from "./utils/generateMarkdown.js";
 
 // TODO: Create an array of questions for user input
 const questions = () => {
     return inquirer.prompt([
         {
             type: 'input',
-            name: 'projectTitle',
+            name: 'title',
             message: 'What is the project title?',
         },
         {
@@ -40,7 +40,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'Which liscence would you like to use for your project?',
-            choices: ['MIT', 'apache', 'GNU', 'unlicense', 'None of the Above'],
+            choices: ['MIT', 'apache', 'GNU', 'unilicense', 'None of the Above'],
         },
         {
             type: 'input',
@@ -57,7 +57,7 @@ const questions = () => {
 
 // TODO: Create a function to write README file
 const writeToFile = ({
-    projectTitle,
+    title,
     description,
     installation,
     usage,
@@ -67,7 +67,55 @@ const writeToFile = ({
     username,
     contact
 }) =>
-    ` 
+    ` ${generateMarkdown(title, license)}
+## Description
+${description}
+
+## Installation
+${installation}
+
+
+npm install
+
+
+## Usage
+${usage}
+
+You can use the following command in the console.
+
+npm start
+
+The newly created README will appear within the "Generated" folder.
+
+
+## ContributionGuidelines
+${contribution}
+
+## TestInstructions
+${testInstructions}
+
+## Questions
+Who am I?
+My profile: [${username}](github.com/${username})
+
+How to contact me?
+Email: ${contact}
+If there are any errors, updates, or further questions for this project, please
+email me and set the subject line as "Generator2.21".
+
+## Table of Contents:
+
+[Description](#Description)
+
+[Installation](#Installation)
+
+[Usage](#Usage)
+
+[Contribution Guidelines](#ContributionGuidelines)
+
+[Test Instructions](#TestInstructions)
+
+[Questions](#Questions)
 
 `
 
@@ -76,7 +124,7 @@ const writeToFile = ({
 // TODO: Create a function to initialize app
 const init = () => {
     questions()
-        .then((answers) => writeFile('README.md', writeToFile(answers)))
+        .then((answers) => writeFile('./Generated/README.md', writeToFile(answers)))
         .then(() => console.log('Successfully generated README.'))
         .catch((err) => console.log(err));
 };
