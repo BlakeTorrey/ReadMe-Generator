@@ -96,7 +96,7 @@ ${testInstructions}
 
 ## Questions
 Who am I?
-My profile: [${username}](github.com/${username})
+My profile: [${username}](www.github.com/${username})
 
 How to contact me?
 Email: ${contact}
