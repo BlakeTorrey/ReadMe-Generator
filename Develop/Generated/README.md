@@ -38,7 +38,9 @@ If any contributions are made, please contact me through email and update the cu
 
 ## Questions
 Who am I?
-My profile: [BlakeTorrey](www.github.com/BlakeTorrey)
+
+My profile: [BlakeTorrey](https://www.github.com/BlakeTorrey)
+
 
 How to contact me?
 Email: Btorrey1998@gmail.com
