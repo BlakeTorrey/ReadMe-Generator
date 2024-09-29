@@ -88,10 +88,10 @@ npm start
 The newly created README will appear within the "Generated" folder.
 
 
-## ContributionGuidelines
+## Contribution Guidelines
 ${contribution}
 
-## TestInstructions
+## Test Instructions
 ${testInstructions}
 
 ## Questions
@@ -103,19 +103,19 @@ Email: ${contact}
 If there are any errors, updates, or further questions for this project, please
 email me and set the subject line as "Generator2.21".
 
-## Table of Contents:
+#### Table of Contents
 
-[Description](#Description)
+- [Description](#Description)
 
-[Installation](#Installation)
+- [Installation](#Installation)
 
-[Usage](#Usage)
+- [Usage](#Usage)
 
-[Contribution Guidelines](#ContributionGuidelines)
+- [Contribution Guidelines](#Contribution-Guidelines)
 
-[Test Instructions](#TestInstructions)
+- [Test Instructions](#Test-Instructions)
 
-[Questions](#Questions)
+- [Questions](#Questions)
 
 `
 
